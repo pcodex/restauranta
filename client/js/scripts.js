@@ -17,6 +17,8 @@ var i16 = {name:"Kasturi", addr:"Frankston", photo:"./images/indian/kasturifrank
 var i17 = {name:"Kwality Tandoori", addr:"Frankston", photo:"./images/indian/kwalityfrankston.jpg"};
 var i18 = {name:"Spice Club", addr:"Frankston", photo:"./images/indian/spiceclubfrankston.jpg"};
 var i19 = {name:"Mornington Masala", addr:"Mornington", photo:"./images/indian/mornmasala.jpg"};
+var i20 = {name:"Khazana", addr:"Burwood", photo:"./images/indian/khazanaburw.jpg"};
+var i21 = {name:"Indian Mahal", addr:"Dromana, Mornington Peninsula", photo:"./images/indian/indianmahalmorn.jpg"};
 
 
 var s1 = {name:"Spicy Flames", addr:"Princes Hwy", photo:"./images/sl/spicyflames.jpg"};
@@ -40,12 +42,45 @@ var j8 = {name:"Subway", addr:"Swanston Street", photo:"./images/junk/subwayswan
 var j9 = {name:"Ikea", addr:"Richmond", photo:"./images/junk/ikearichmond.jpg"};
 
 
+var it1 = {name:"Brunetti ", addr:"Carlton", photo:"./images/italian/brunetti.jpg"};
+var it2 = {name:"Cafe Cavallino", addr:"Carlton", photo:"./images/italian/cavallino.jpg"};
+var it3 = {name:"Copperwood", addr:"Carlton", photo:"./images/italian/copperwood.jpg"};
+var it4 = {name:"Cafe Corretto", addr:"Carlton", photo:"./images/italian/corretto.jpg"};
+var it5 = {name:"D.O.C", addr:"Mornington", photo:"./images/italian/docmornington.jpg"};
+var it6 = {name:"Il Gambero", addr:"Carlton", photo:"./images/italian/ilgambero.jpg"};
+var it7 = {name:"La Porchetta", addr:"North Melbourne", photo:"./images/italian/laporchettavicst.jpg"};
+var it8 = {name:"Seasons Provedore", addr:"Carlton", photo:"./images/italian/seasonsprovedore.jpg"};
+var it9 = {name:"University Cafe", addr:"Carlton", photo:"./images/italian/universitycafe.jpg"};
 
-var indianrest = [i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11, i12,i13,i14,i15,i16, i17, i18,i19];
+var as1 = {name:"Char Siu House", addr:"North Melbourne", photo:"./images/asian/charsiu.jpg"};
+var as2 = {name:"Dessert Story", addr:"Lt. Bourke", photo:"./images/asian/dessertstoryltbourke.jpg"};
+var as3 = {name:"District 3429", addr:"Sunbury", photo:"./images/asian/dist3429sunbury.jpg"};
+var as4 = {name:"Dragon Town", addr:"Mornington", photo:"./images/asian/dragontwnmorn.jpg"};
+var as5 = {name:"Fortune Kitchen", addr:"Mornington", photo:"./images/asian/fortunekitcmorn.jpg"};
+var as6 = {name:"Hanoi", addr:"North Melbourne", photo:"./images/asian/hanointhmelb.jpg"};
+var as7 = {name:"K L Bunga Raya", addr:"North Melbourne", photo:"./images/asian/klbunga.jpg"};
+var as8 = {name:"Nelayan", addr:"Swanston St", photo:"./images/asian/nelayan.jpg"};
+var as9 = {name:"Noodle Kingdom", addr:"Target Center Lt. Bourke", photo:"./images/asian/noodleking.jpg"};
+var as10 = {name:"Norsiah's Kitchen", addr:"Carlton", photo:"./images/asian/norsiah.jpg"};
+var as11 = {name:"Oko Oko", addr:"Carlton", photo:"./images/asian/okookocarlton.jpg"};
+var as12 = {name:"Papa Rich", addr:"Doncaster", photo:"./images/asian/paparichdonc.jpg"};
+var as13 = {name:"Papa Rich", addr:"QV Mall", photo:"./images/asian/paparichqv.jpg"};
+var as14 = {name:"Pho Victoria", addr:"North Melbourne", photo:"./images/asian/phovic.jpg"};
+var as15 = {name:"Sun & Mei", addr:"Mornington", photo:"./images/asian/sunmeimorn.jpg"};
+var as16 = {name:"Viet Star", addr:"Hawthorn", photo:"./images/asian/viethawthorn.jpg"};
+
+
+
+
+var indianrest = [i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11, i12,i13,i14,i15,i16, i17, i18,i19,i20, i21];
 
 var slankanrest = [s1,s2,s3,s4,s5,s6,s7,s8,s9];
 
 var junkrest = [j1,j2,j3,j4, j5,j6,j7,j8,j9];
+
+var italianrest = [it1,it2,it3,it4,it5,it6,it7,it8,it9];
+
+var asianrest = [as1,as2,as3,as4,as5,as6,as7,as8, as9,as10,as11,as12,as13,as14,as15, as16];
 
 
 $(document).ready(function(){
@@ -69,6 +104,22 @@ $(document).ready(function(){
     	$('#nextarrow').show();   
         console.log("Sri Lankan has been clicked");       
         showRestaurants(slankanrest);
+        e.preventDefault();
+    });
+
+    $('#italian').click(function(e) {    	
+    	$('#prevarrow').show();   
+    	$('#nextarrow').show();   
+        console.log("Italian has been clicked");       
+        showRestaurants(italianrest);
+        e.preventDefault();
+    });
+
+    $('#asian').click(function(e) {    	
+    	$('#prevarrow').show();   
+    	$('#nextarrow').show();   
+        console.log("Asian has been clicked");       
+        showRestaurants(asianrest);
         e.preventDefault();
     });
 
